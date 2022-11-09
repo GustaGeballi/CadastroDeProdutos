@@ -1,10 +1,25 @@
 <div *ngIf="produto">
 
-  <h2>{{produto.nome | uppercase}} Detalhes</h2>
-  <div><span>ID: </span>{{produto.id}}</div>
-  <div>
+  <h2>{{produto.nome}} - detalhes</h2>
+  <div class="ap"><span>ID: </span>{{produto.id}}</div>
+  <div class="ap">
     <label for="nome-produto">Nome do Produto: </label>
-    <input id="nome-produto" [(ngModel)]="produto.nome" placeholder="nome">
+    <input id="nome-produto" [(ngModel)]="produto.nome" placeholder="nome" maxlength="15">
   </div>
-
+  <div class="ap">
+    <label for="preco-produto">Preço do Produto: </label>
+    <input id="preco-produto" [(ngModel)]="produto.preco" placeholder="preco" maxlength="15">
+  </div>
+  <div class="ap">
+    <label for="Processador-produto">Processador: </label>
+    <input id="processador-produto" [(ngModel)]="produto.processador" placeholder="processador " maxlength="22">
+  </div>
+  <div class="ap">
+    <label for="chipset-produto">Chipset: </label>
+    <input id="chipset-produto" [(ngModel)]="produto.chipset" placeholder="chipset " maxlength="22">
+  </div>
+  <div class="ap">
+    <label for="armazentamento-produto">Armazenamento: </label>
+    <input id="armazentamento-produto" [(ngModel)]="produto.armazenamento" placeholder="armazenamento " maxlength="22">
+  </div>
 </div>

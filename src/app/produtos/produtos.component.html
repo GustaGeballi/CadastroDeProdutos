@@ -1,5 +1,6 @@
-<h2>Meus Produtos</h2>
+<h2>Produtos - Telefonía e Informática</h2>
 
+<div class="container">
 <ul class="produtos">
   <li *ngFor="let produto of produtos">
     <button [class.selected]="produto === selectedProduto" type="button" (click)="onSelect(produto)">
@@ -8,5 +9,7 @@
     </button>
   </li>
 </ul>
+<div class="detalhes"><app-detalhes-produto [produto]="selectedProduto"></app-detalhes-produto></div>
+</div>
 
-<app-detalhes-produto [produto]="selectedProduto"></app-detalhes-produto>
+
