@@ -1,6 +1,15 @@
+h2{
+  display: flex;
+  justify-content: center;
+  color: rgb(47, 47, 47);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
 ul{
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 
 .produtos {
@@ -24,11 +33,11 @@ ul{
   padding: 0;
   border-radius: 40px;
   align-items: stretch;
-  height: 1.8em;
+  height: 2em;
 }
 
 .produtos button:hover {
-  color: #2c3a41;
+  color: #000000;
   background-color: #e6e6e6;
   left: .1em;
 }
@@ -39,29 +48,30 @@ ul{
 }
 
 .produtos button.selected {
-  background-color: black;
+  background-color: rgb(88, 88, 88);
   color: white;
 }
 
 .produtos button.selected:hover {
-  background-color: #505050;
-  color: white;
+  background-color: #c1c1c1;
+  color: rgb(0, 0, 0);
 }
 
 .produtos button.selected:active {
-  background-color: black;
-  color: white;
+  background-color: rgb(190, 190, 190);
+  color: rgb(0, 0, 0);
 }
 
 .produtos .badge {
   display: inline-block;
   font-size: small;
-  color: white;
-  padding: 0.8em 0.7em 0 0.7em;
-  background-color: #405061;
-  line-height: 1em;
-  margin-right: .8em;
-  border-radius: 4px 0 0 4px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  padding: .7em;
+  background-color: #ffb700;
+  margin-right: 1em;
+  border-radius: 100px;
+  border: 3px solid rgb(255, 255, 255);
 }
 
 .produtos .nome {
